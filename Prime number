@@ -1,0 +1,86 @@
+import java.util.Scanenr;
+class Main{
+  public static void main(String[] args){
+     boolean isFlag =true;
+     int count=0;
+     long start = System.currentTimeMills();
+      for(int i=2;i<=100;i++){
+          for(int j=2;j<i;j++){
+              if(i%j==0){
+                  isFlag=false;
+                  break;
+              }
+          }
+            if(isFlag==true){
+                System.out.println(i);
+                count++;
+            }
+              isFlag = true;
+      }
+        long end = System.currentTimeMillis();
+        
+  }
+}
+   break,continue:
+      class Main{
+         public static void main(String[] args){
+             
+                for(int i=1;i<=10;i++){
+                   if(i%4==0){
+                       break;
+                       System.out.println("ddd");
+                       
+                   }
+                   
+                     System.out.println(i);
+                }
+                  System.out.print();
+                  lable: for(int i=1;i<=4;i++){
+                        for(int j=1;j<=10;j++){
+                              if(j%4==0){
+                                 break  lable;(结束指定标识的一层循环结构)
+                                 continue label(结束你指定标识的当此循环);
+                              }
+                               System.out.print(i);
+                        }
+                        System.out.print();
+                   }
+         }
+      }
+      
+        class FamilyAcount{
+            public  static void main(String[] args){
+            isFlag=true;  
+            //用于记录用户的收入和支出详情
+            String details="收支\t账户金额\t账户金额\t说  明\n";
+                while(isFlag){
+                   System.out.println("--------------家庭收支明细-----------\n");
+                   
+                   System.out.println("               1.收支明细");
+                   
+                   System.out.println("                2.登记收入");
+                   
+                  System.out.println("                3.登记支出");
+                   System.out.println("               4.推      出");
+                   
+                    char selection =  utility.readMenuebord();
+                   //isFlag=false;
+                     switch(selection){
+                       case ‘1’:
+                           System.out.println("------当前收支明细记录------");
+                           System.out.println(details);
+                           System.out.println("-----------------------------");
+                            break;
+                       case ‘2’:
+                        System.out.println(" 收入金额");
+                        int money = Utility.readString();
+                         System.out.println(" 本次收入说明");
+                         int info = Utility.readString();
+                       case ‘3’:
+                        System.out.println("3.登记支出");
+                        case ‘4’:
+                             System.out.println("4.推      出");
+                     }
+                }
+            }
+        }
